@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu2.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".list>li").mouseenter(function () {
+                $(this).children("ul").stop().slideDown();
+            });
+            $(".list>li").mouseleave(function () {
+                $(this).children("ul").stop().slideUp();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="gnb">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="bar">
+                <ul class="list clearFix">
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">도루코 캠페인</a></li>
+                            <li> <a href="#">NEWS</a></li>
+                            <li> <a href="#">지난 캠페인</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">제품</a>
+                        <ul>
+                            <li><a href="#">신제품소개</a></li>
+                            <li><a href="#">칼</a></li>
+                            <li> <a href="#">가위</a></li>
+                            <li> <a href="#">냄비</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul>
+                            <li><a href="#">진행중이벤트</a></li>
+                            <li><a href="#">쇼핑 기획전</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li> <a href="#">매장안내</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="section">
+            <div class="banner">
+                <img src="images/banner.jpg" alt="banner2">
+            </div>
+            <div class="product">
+                <div class="p_text">
+                    <h1>mychef Product</h1>
+                    <p>도루코 마이셰프의 다양한 제품을 만나보세요.</p>
+                </div>
+                    <ul class="boxes ">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>

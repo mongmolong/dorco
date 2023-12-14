@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearFix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+#header {
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 100px;
+}
+
+#header .gnb .logo {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#header .gnb {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+#header .gnb .bar {
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.904);
+
+    position: absolute;
+    top: 88px;
+    left: 0;
+    z-index: 1;
+}
+
+#header .gnb .bar .list {
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15pt;
+    text-align: center;
+
+}
+
+
+#header .gnb .bar .list>li>a {
+    display: block;
+    color:white;
+}
+
+#header .gnb .bar .list>li {
+    float: left;
+    width: 140px;
+    font-size: 12pt;
+}
+
+#header .gnb .bar .list:hover ul {
+    background-color: white;
+}
+#header .gnb .bar .list li>ul>li{
+    font-size: 10pt;
+}
+#header .gnb .bar .list li>ul {
+    display: none;
+}
+
+
+#header .gnb .bar .list>li>a:hover {
+    display: block;
+    background-color:rgba(255, 255, 255, 0.425);
+    color: white;
+}
+
+#header .gnb .bar .list>li>ul>li>a {
+color:gray;
+}
+#header .gnb .bar .list>li>ul>li>a:hover {
+    display: block;
+    padding: 0 5px;
+    color: black;
+}
+
+
+
+#section .banner {
+    position: relative;
+    left: 0;
+}
+
+
+/* ------------product------------------------- */
+
+#section .product {
+    background-image: url("images/main_bg_product.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 800px;
+}
+
+#section .product .p_text {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+#section .product .p_text h1 {
+    font-size: 32pt;
+    text-align: center;
+
+}
+
+#section .product .p_text h1::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 2px;
+    background-color: rgb(63, 63, 63);
+    margin: 30px;
+
+    position: relative;
+    top: 0;
+    left: 345px;
+}
+
+
+#section .product .p_text p {
+    font-size: 16pt ;
+    text-align: center;
+    margin-bottom: 90px;
+
+}
+
+
+
+
+#section .product  .boxes{
+width: 1080px;
+height: 360px;
+margin: 0 auto;
+}
+#section .product  .boxes li:hover{
+    background-color: rgba(255, 255, 255, 0.664);
+
+}
+#section .product  .boxes li{
+    width: 340px;
+    height: 170px;
+    float: left;
+    margin: 0 10px 10px 10px;
+    background-color: white;
+    transition: all 0.8s;
+
+    background-image: url("images/ico_product.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+#section .product  .boxes li:nth-child(2){
+background-position:  30px -170px;
+}
+#section .product  .boxes li:nth-child(3){
+background-position: 20px -340px;
+}
+#section .product  .boxes li:nth-child(4){
+background-position: 15px -510px;
+}
+#section .product  .boxes li:nth-child(5){
+background-position: 10px -680px;
+}
+#section .product  .boxes li:nth-child(6){
+background-position:  10px -850px;;
+}
+
